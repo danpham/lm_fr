@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auteur : Nicolas Gressier %
+% Créé le : 27/06/2007      %
+% Mise à jour : 27/06/2007  %
+% Version 1.0               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+
+\usepackage[utf8x]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\usepackage{fontawesome} % Les images du téléphone et email
+\RequirePackage{color}
+\RequirePackage[
+	bookmarks=false,
+	colorlinks,
+	breaklinks=true,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=, % Pas de couleur pour les liens
+	pdfborder={0 0 0}
+]{hyperref}
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage[dvips]{graphicx}\fi
+
+\pagestyle{empty}
+
+\usepackage[a4paper,top=1.5cm,bottom=1.5cm,left=2.0cm,right=2.0cm]{geometry}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Définition des informations sur du PDF %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+pdfauthor = {Dan Pham},
+pdftitle = {preavis},
+pdfsubject = {},
+pdfkeywords = {},
+pdfcreator = {TeX},
+pdfproducer = {pdfTeX}}
+
+% PDF Info
+\pdfinfo{
+	/CreationDate (D:20111110120000)
+	/ModDate (D:20111110120000)
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fin Définition des informations sur du PDF %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+\renewcommand{\ttdefault}{pcr}
+
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{flushleft}
+{\bfseries Dan Pham}\\[.35ex]
+{\small\itshape
+Rue des Bossons, 10\\
+1213 Onex\\[.35ex]
+~\raisebox{-0.3ex}{\faPhone}~+41 76 250 25 00\\
+~\raisebox{-0.1ex}{\faEnvelopeO}~\texttt{\href{mailto:Dan\%20Pham<work@danpham.com>?subject=Contact}{work@danpham.com}}
+}\\[3em]
+
+\begin{flushright}
+
+\begin{minipage}[t]{.4\textwidth}
+\raggedright
+{\bfseries Entreprise}\\[.35ex]
+{\small\itshape
+Adresse \\
+Ville \\}
+\end{minipage}\\[2em]
+
+\end{flushright}
+\end{flushleft}
+
+\hfill % US style
+\begin{minipage}[t]{.4\textwidth}
+        Genève, le 27 juin 2022
+\end{minipage}\\[8em]
+\raggedright
+\textbf{Ingénieur logiciel systèmes embarqués} \\[2em]
+\paragraph{}
+Madame, Monsieur,
+\par
+\hspace{0.4cm}Ingénieur logiciel de formation, je voudrais vous faire part de ma motivation pour intégrer votre
+entreprise.
+\par
+\hspace{0.4cm}Passionné d’informatique embarquée, je me suis dirigé dans le développement logiciel embarqué car
+j’apprécie tout particulièrement le développement bas niveau. J’ai ensuite réalisé plusieurs drivers sur microcontrôleurs et cibles embarquées dans le cadre de mes missions. De plus, j’utilise Linux régulièrement pour du développement C ou la gestion de mon serveur personnel.
+\par
+\hspace{0.4cm}Ces compétences, liées à mon esprit dynamique et ma capacité à travailler en équipe, me permettront d’intégrer rapidement et de manière efficace votre entreprise. En espérant vous avoir convaincu de ma grande motivation, je reste à votre disposition pour tout entretien éventuel.
+\paragraph{}
+En vous remerciant par avance de l'attention que vous porterez à ma candidature, je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.\\[3em]
+\begin{flushright}
+\begin{minipage}[t]{.4\textwidth}
+{\bfseries Dan Pham}\\
+\end{minipage}\\
+\end{flushright}
+
+\vfill%
+\end{document}
